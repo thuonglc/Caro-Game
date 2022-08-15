@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.square {
+  background: #edf2f7;
+  border: 1px solid #999;
+  border-radius: 0.375rem;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  height: 36px;
+  width: 36px;
+  margin: -1px;
+  text-align: center;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.square:hover:enabled {
+  background: #c7daed;
+  transition: all 0.2s ease;
+}
+
+.square:disabled {
+  cursor: not-allowed;
+}
+
+.square-highlight {
+  background-color: yellow;
+}
